@@ -25,23 +25,49 @@ public class Ejemplo01 {
         
         switch(cadena){
             case "Lunes":
-                System.out.printf("%s", cadena);
+                System.out.printf("%s, es primer día de la semana\n",
+                        cadena);
                 break;
             
             case "Martes":
             case "martes":
-                System.out.printf("%s", cadena);
+                System.out.printf("%s, es el segundo día de la semana\n",
+                        cadena);
                 break;
+                
+            case "Miércoles":
+                System.out.printf("%s, es tercer día de la semana\n",
+                        cadena);
+                
+            case "Jueves":
+                System.out.printf("%s, es cuarto día de la semana\n",
+                        cadena);
             
             case "Viernes":
             case "VIERNES":
             case "viernes":
-                System.out.printf("%s", cadena);
+                System.out.printf("%s, es el quinto día de la semana\n",
+                        cadena);
                 break;
+                
+            case "Sábado":
+                System.out.printf("%s, es el sexto día de la semana\n",
+                        cadena);
+                
+            case "Domingo":
+                System.out.printf("%s, es el séptimo día de la semana\n",
+                        cadena);
              
             default:
-                System.out.println("ninguna de las anteriores");
+                System.out.println("ninguna de las anteriores\n");
                 break;
+                
+            /*
+            Case, es una especie de condicional, en donde break sirve para ir
+                al final de todos los casos si se cumple. 
+                default siempre va al final para el caso en donde ningun caso
+                se cumpla
+            */
         }
         
     }
